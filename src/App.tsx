@@ -1,24 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Fragment } from 'react';
+import './App.scss';
+import GameDisplay from './components/gameDIsplayArea/GameDisplay';
+import GameHistory from './components/gameHistory/GameHistory';
+import GameSelection from './components/gameSelection/GameSelection';
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="game">
+      <div className="game-left">
+        <div className="game-left-display">
+          <GameDisplay />
+        </div>
+        <div className="game-left-selection"><GameSelection /></div>
+      </div>
+      <div className="game-right">
+        <div className="game-right-history"><GameHistory /></div>
+      </div>
+
     </div>
   );
 }

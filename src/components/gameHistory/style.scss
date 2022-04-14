@@ -1,0 +1,20 @@
+.resultInfo{
+    display: flex;
+    position:sticky;
+    top:0;
+    & > div{
+        flex:1
+    }
+    
+}
+.gameItem{
+    display: flex;
+    padding: 5px;
+    & > div{
+        flex:1;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        
+    }
+}

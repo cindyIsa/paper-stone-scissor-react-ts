@@ -1,0 +1,32 @@
+.game{
+  display: flex;
+  flex-direction: row;
+  background-color: #ddd;
+  height: 400px;
+  margin: 10% 10px;
+  border: 2px solid #ddd;
+  &-left{
+    flex: 3;
+    display: flex;
+    background: #f6f6f6;
+    flex-direction: column;
+    &-display{
+      flex: 3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    &-selection {
+    flex:1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  }
+  &-right{
+    flex: 1;
+    overflow: auto;
+    background: #f6f6f6;
+    border-left: #ddd solid 2px;
+  }
+}
